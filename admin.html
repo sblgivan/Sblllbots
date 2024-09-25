@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Bot - SBL Smart Bots</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="dynamic-welcome"></h2>
+
+        <div class="bot-order-list">
+            <!-- Dynamically populated list of bots -->
+        </div>
+
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p>Bot Selected: <span id="selectedBot"></span></p>
+            <p>Price: $<span id="botPrice"></span></p>
+            <input type="checkbox" id="confirmOrder" required> Confirm Order
+            <button onclick="placeOrder()">Order Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
