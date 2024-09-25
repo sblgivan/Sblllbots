@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBL Smart Bots</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="light-theme">
+        <header>
+            <h2 class="welcome-message"></h2>
+        </header>
+        
+        <div id="botList" class="bot-list">
+            <!-- Bots will be dynamically loaded here -->
+        </div>
+
+        <footer>
+            <p>&copy; 2024 SBL Smart Bots</p>
+        </footer>
+
+        <!-- Floating Action Button -->
+        <div id="fab" class="fab">
+            <span>+</span>
+            <ul class="fab-options">
+                <li onclick="orderBot()"><span>🛒</span> Order Bot</li>
+                <li onclick="aboutUs()"><span>📨</span> About Us</li>
+                <li onclick="openSettings()"><span>⚙️</span> Settings</li>
+            </ul>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <h3>Settings</h3>
+                <label for="backgroundSwitch">Stop Background Animation</label>
+                <input type="checkbox" id="backgroundSwitch" onchange="toggleBackgroundAnimation()">
+                <label for="themeSwitch">Dark/Light Theme</label>
+                <input type="checkbox" id="themeSwitch" onchange="toggleTheme()">
+                <button onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
