@@ -1,0 +1,12 @@
+[
+    {
+        "username": "kap",
+        "phone": "0740035058",
+        "role": "admin"
+    },
+    {
+        "username": "user1",
+        "phone": "0740012345",
+        "role": "user"
+    }
+]
