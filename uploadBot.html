@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="app">
+    <div class="container">
+        <h1>Upload a New Bot</h1>
+        <form id="uploadBotForm">
+            <label for="botName">Bot Name:</label>
+            <input type="text" id="botName" name="botName" required>
+            
+            <label for="botDescription">Bot Description:</label>
+            <textarea id="botDescription" name="botDescription" required></textarea>
+            
+            <label for="botImages">Upload Bot Images:</label>
+            <input type="file" id="botImages" name="botImages" multiple required>
+            
+            <label for="botPrice">Bot Price (USD):</label>
+            <input type="range" id="botPrice" name="botPrice" min="10" max="20">
+            
+            <button type="submit">Upload Bot</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
